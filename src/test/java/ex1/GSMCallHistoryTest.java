@@ -1,4 +1,4 @@
-package Ex1;
+package ex1;
 
 import junit.framework.TestCase;
 
@@ -7,7 +7,7 @@ import java.time.LocalTime;
 
 public class GSMCallHistoryTest extends TestCase {
     public void test1(){
-        GSM gsm = new GSM("Oppo", "VietNam", "Hoang", new Baterry(BatteryType.LiIon.name(), 1, 1), new Display(38.5, 3));
+        GSM gsm = new GSM("Oppo", "VietNam", "Hoang", new Battery(BatteryType.LI_ION.getBatteryName(), 1, 1), new Display(38.5, 3));
         gsm.getCallHistories().add(new Call(LocalDate.now(), LocalTime.now(), "0392661419", 1000));
         gsm.getCallHistories().add(new Call(LocalDate.now(), LocalTime.now(), "0392661419", 100));
         gsm.getCallHistories().add(new Call(LocalDate.now(), LocalTime.now(), "0392661419", 200));

@@ -1,18 +1,18 @@
-package Ex3;
+package ex3;
 
-public class Dog extends Animal{
-    public Dog(int age, String name, String sex) {
-        super(age, name, sex);
+public class Tomcat extends Cat {
+    public Tomcat(int age, String name) {
+        super(age, name, "male");
     }
 
     @Override
     public void sound() {
-        System.out.println("Gow");
+        System.out.println("Mewmewmew");
     }
 
     @Override
     public String toString() {
-        return "Dog{" +
+        return "Tomcat{" +
                 "age=" + age +
                 ", name='" + name + '\'' +
                 ", sex='" + sex + '\'' +

@@ -1,11 +1,11 @@
-package Ex3;
+package ex3;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class AM {
+public class AnimalManager {
     public static void main(String[] args) {
         List<Animal> animals = new ArrayList<>();
         animals.add(new Cat(5, "cat", "male" ));
@@ -45,7 +45,7 @@ public class AM {
                 avg += animal.age;
             }
             avg /= type.getValue().size();
-            System.out.println("Avage age of " + type.getKey() + " : " + avg);
+            System.out.println("Average age of " + type.getKey() + " : " + avg);
         }
     }
 }

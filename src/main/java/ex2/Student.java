@@ -1,4 +1,4 @@
-package Ex2;
+package ex2;
 
 public class Student extends Human{
     private double grade;

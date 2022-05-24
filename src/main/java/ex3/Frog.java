@@ -1,4 +1,4 @@
-package Ex3;
+package ex3;
 
 public class Frog extends Animal{
     public Frog(int age, String name, String sex) {

@@ -1,4 +1,4 @@
-package Ex1;
+package ex1;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -9,7 +9,7 @@ public class GSM {
     private String model;
     private String manufacture;
     private String owner;
-    private Baterry baterry;
+    private Battery battery;
     private Display characteristics;
     private List<Call> callHistories;
 
@@ -17,24 +17,24 @@ public class GSM {
         this.model = model;
         this.manufacture = manufacture;
         this.owner = null;
-        this.baterry = null;
+        this.battery = null;
         this.characteristics = null;
         this.callHistories = new ArrayList<>();
     }
 
-    public GSM(String model, String manufacture, String owner, Baterry baterry, Display characteristics) {
+    public GSM(String model, String manufacture, String owner, Battery battery, Display characteristics) {
         this.model = model;
         this.manufacture = manufacture;
         this.owner = owner;
-        this.baterry = baterry;
+        this.battery = battery;
         this.characteristics = characteristics;
         this.callHistories = new ArrayList<>();
     }
 
-    public GSM(String model, String manufacture, Baterry baterry, Display characteristics) {
+    public GSM(String model, String manufacture, Battery battery, Display characteristics) {
         this.model = model;
         this.manufacture = manufacture;
-        this.baterry = baterry;
+        this.battery = battery;
         this.characteristics = characteristics;
         this.owner = null;
         this.callHistories = new ArrayList<>();
@@ -45,15 +45,15 @@ public class GSM {
         this.manufacture = manufacture;
         this.owner = owner;
         this.characteristics = characteristics;
-        this.baterry = null;
+        this.battery = null;
         this.callHistories = new ArrayList<>();
     }
 
-    public GSM(String model, String manufacture, String owner, Baterry baterry) {
+    public GSM(String model, String manufacture, String owner, Battery battery) {
         this.model = model;
         this.manufacture = manufacture;
         this.owner = owner;
-        this.baterry = baterry;
+        this.battery = battery;
         this.characteristics = null;
         this.callHistories = new ArrayList<>();
     }
@@ -63,14 +63,14 @@ public class GSM {
         this.manufacture = manufacture;
         this.characteristics = characteristics;
         this.owner = null;
-        this.baterry = null;
+        this.battery = null;
         this.callHistories = new ArrayList<>();
     }
 
-    public GSM(String model, String manufacture, Baterry baterry) {
+    public GSM(String model, String manufacture, Battery battery) {
         this.model = model;
         this.manufacture = manufacture;
-        this.baterry = baterry;
+        this.battery = battery;
         this.owner = null;
         this.characteristics = null;
         this.callHistories = new ArrayList<>();
@@ -80,7 +80,7 @@ public class GSM {
         this.model = model;
         this.manufacture = manufacture;
         this.owner = owner;
-        this.baterry = null;
+        this.battery = null;
         this.characteristics = null;
         this.callHistories = new ArrayList<>();
     }
@@ -109,12 +109,12 @@ public class GSM {
         this.owner = owner;
     }
 
-    public Baterry getBaterry() {
-        return baterry;
+    public Battery getBaterry() {
+        return battery;
     }
 
-    public void setBaterry(Baterry baterry) {
-        this.baterry = baterry;
+    public void setBaterry(Battery battery) {
+        this.battery = battery;
     }
 
     public Display getCharacteristics() {
@@ -175,7 +175,7 @@ public class GSM {
                 "model='" + model + '\'' +
                 ", manufacture='" + manufacture + '\'' +
                 ", owner='" + owner + '\'' +
-                ", baterry=" + baterry +
+                ", baterry=" + battery +
                 ", characteristics=" + characteristics +
                 '}';
     }

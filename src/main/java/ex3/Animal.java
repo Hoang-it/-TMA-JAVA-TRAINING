@@ -1,6 +1,6 @@
-package Ex3;
+package ex3;
 
-public class Animal implements ISound{
+public class Animal implements Sound {
     protected int age;
     protected String name;
     protected String sex;
@@ -9,7 +9,6 @@ public class Animal implements ISound{
         this.age = age;
         this.name = name;
         this.sex = sex;
-
     }
 
     @Override

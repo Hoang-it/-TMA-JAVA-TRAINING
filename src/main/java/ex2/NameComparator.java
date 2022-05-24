@@ -1,8 +1,12 @@
-package Ex2;
+package ex2;
 
 import java.util.Comparator;
 
-public class FirstAndLastNameComparator implements Comparator {
+/**
+ * This Comparator is for sorting ascending Human class by FirstName and LastName.
+ * First, it sorts FirstName, if FirstName is equal, it sorts by LastName
+ */
+public class NameComparator implements Comparator {
     @Override
     public int compare(Object o1, Object o2) {
         Human human1 = (Human) o1;

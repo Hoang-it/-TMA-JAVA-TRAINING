@@ -1,10 +1,9 @@
-package Ex2;
+package ex2;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
-public class HRM {
+public class HumanResourceManager {
     public static void main(String[] args) {
         List<Student> students = new ArrayList<>();
         students.add(new Student("Hoang", "Nguyen Huu", 9.5));
@@ -38,21 +37,21 @@ public class HRM {
 
         System.out.println("========Students=========");
 
-        Collections.sort(students, new GradeComparator());
+        students.sort(new GradeComparator());
         for (Student student : students
         ) {
             System.out.println(student.toString());
         }
 
         System.out.println("========Worker=========");
-        Collections.sort(workers, new MoneyComparator());
+        workers.sort(new MoneyComparator());
         for (Worker worker : workers
         ) {
             System.out.println(worker.toString());
         }
 
         System.out.println("========Mix=========");
-        Collections.sort(humans, new FirstAndLastNameComparator());
+        humans.sort(new NameComparator());
         for (Human human : humans
         ) {
             System.out.println(human.toString());

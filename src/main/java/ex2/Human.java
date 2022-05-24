@@ -1,4 +1,4 @@
-package Ex2;
+package ex2;
 
 public abstract class Human {
     protected String firstName;
